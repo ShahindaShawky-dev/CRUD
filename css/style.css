@@ -1,0 +1,296 @@
+body {
+  background: linear-gradient(180deg, #f7f9ff, #eef3ff);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Logo */
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #6a5cff, #8f7bff);
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.btn-add {
+  background-image: linear-gradient(to right, oklch(54.1% .281 293.009), oklch(51.1% .262 276.966));
+  transition: all 0.3s;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px -5px violet;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 2px solid rgb(232, 236, 241);
+}
+
+.stat-card small {
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.stat-card h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Icons */
+.icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.bg-blue {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.bg-orange {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.bg-red {
+  background: linear-gradient(135deg, #ef4444, #f87171);
+}
+
+.phone {
+  background-color: rgb(216, 224, 250);
+}
+
+.location {
+  background-color: #e0f4dc;
+}
+
+.mail {
+  background-color: #e6dbf1;
+}
+
+/* ****************************** */
+.status-card {
+  background: #fff;
+  border-radius: 22px;
+  /* overflow: hidden; */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.status-header {
+  padding: 18px 22px;
+}
+
+.status-header.fav {
+  background-color: #fcf4e4;
+}
+
+.status-header.emergency {
+  background-color: #f8e8e8;
+}
+
+.status-header h5 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.status-header span {
+  font-size: 14px;
+  color: #888;
+}
+
+.icon-box {
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.status-header.fav .icon-box {
+  background: #ffb703;
+}
+
+.status-header.emergency .icon-box {
+  background: #e63946;
+}
+
+.status-body {
+  border-top: 1px solid #f1f1f1;
+
+}
+
+.status-body p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #9aa0a6;
+  font-size: 18px;
+}
+
+/* ****************************** */
+
+/* Search */
+.search-box {
+  position: relative;
+}
+
+.search-box i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.search-box input {
+  padding-left: 45px;
+  border-radius: 30px;
+  height: 50px;
+}
+
+.search-box input::placeholder {
+  color: #9ea5ac;
+}
+
+/* Empty State */
+.empty-state {
+  margin-top: 80px;
+}
+
+.empty-icon {
+  width: 80px;
+  height: 80px;
+  background: #eaeaff;
+
+}
+
+.empty-state h5 {
+  color: #888;
+}
+
+.empty-state p {
+  color: #b6b9be;
+}
+
+/* cards */
+
+/* Avatar */
+.avatar-lg {
+  width: 55px;
+  height: 55px;
+  font-size: 1.5rem;
+
+}
+
+/* Emergency floating icon */
+.emergency-icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fff;
+}
+
+/* Icon boxes */
+.icon-box {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+
+.deletBtn,
+.updateBtn,
+.addFav,
+.addEmergency {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.containerCard {
+  border: 2px solid rgb(232, 236, 241);
+
+}
+
+.actions {
+  border-top: 1px solid rgb(232, 229, 229);
+
+}
+
+.first-litter-box {
+  width: 35px;
+  height: 35px;
+}
+
+.fav-phone {
+  width: 25px;
+  height: 25px;
+  background-color: #d9fbcc;
+  transition: all 0.3s;
+}
+
+.fav-phone:hover {
+  background-color: #589b40;
+}
+
+.fav-phone i.fa-phone {
+  color: green;
+}
+
+.fav-phone:hover i.fa-phone {
+  color: #fff;
+}
+
+.emergencyDot {
+  background-color: red;
+  border: 2px solid white;
+  width: 20px;
+  height: 20px;
+  bottom: -2px;
+  right: -1px;
+}
+
+.emergencyDot .fa-heart-pulse {
+  font-size: 7px;
+  margin-top: 3px;
+}
+
+i.fa-regular .fa-star:focus {
+  color: rgb(255, 255, 0);
+}
+
+.photo-upload {
+    margin-bottom: 20px;
+    
+}
+
+.change-photo {
+    display: inline-block;
+    margin-top: 10px;
+    /* cursor: pointer; */
+    color: #4e4e4e;
+    font-weight: 500;
+}
+
+.change-photo i {
+    margin-right: 5px;
+}
